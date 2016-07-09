@@ -11,6 +11,14 @@ var sanitizer = require("express-sanitizer")
 
 app.set('view engine', 'ejs');
 
+app.use(function(req, res, next){
+    
+    if (req.headers['x-forwarded-proto'] === 'http') {next()}
+    else {
+        console.log('redir')
+        res.redirect('http://'+req.hostname+req.url)}
+})
+
 app.use(express.static('public'));
 app.use(parser.urlencoded({extended:true}));
 app.use(sanitizer());
