@@ -1,0 +1,46 @@
+i.transgender {
+    
+    font-size: 3em;
+    background-color: red;
+    margin: 10px;
+}
+
+a > img{
+     font-size: 1 em;
+    /*background-color: red;*/
+    margin: 10px;
+}
+
+.container.main{
+    margin-top: 7em;
+    position: relative;
+
+}
+
+/*#bigbox{*/
+/*         position: absolute;*/
+/*}*/
+
+#sign {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#del{
+    display: inline;
+    
+}
+
+#spacer{
+    min-height: 60px;
+}
+
+#flashObj{
+    display: block;
+}
+
+html {height:90%} 
+body {min-height:80%;
+ position: relative;
+}
